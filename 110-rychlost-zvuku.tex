@@ -8,6 +8,7 @@
   ,sortlocale=cs_CZ   % locale of main language, it is for sorting
   ,bibencoding=UTF8   % this is necessary only if bibliography file is in different encoding than main document
 ]{biblatex}
+
 \usepackage[utf8]{inputenc}
 \usepackage{fancyhdr}
 \usepackage{amsmath}
@@ -16,16 +17,17 @@
 \usepackage{graphicx}
 \usepackage{pdfpages}
 \usepackage{url}
+
+\usepackage{siunitx}
+\sisetup{locale = DE}  %, separate-uncertainty = true    kdybych chtel +/-
+
 \usepackage{float}
+\newfloat{graph}{htbp}{grp}
+\floatname{graph}{Graf}
+\newfloat{tabulka}{htbp}{tbl}
+\floatname{tabulka}{Tabulka}
 
-\graphicspath{graficos}
-
-\newfloat{customgraph}{Hn}{grp}
-\floatname{customgraph}{Graf}
-
-\floatstyle{plaintop}
-\newfloat{customtables}{Hn}{tbl}
-\floatname{customtables}{Tabulka}
+\renewcommand{\thefootnote}{\roman{footnote}}
 
 \pagestyle{fancy}
 \lhead{Praktikum I - (X) Rychlost šíření zvuku}
