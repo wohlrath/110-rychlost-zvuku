@@ -1,1 +1,54 @@
 \section*{Výsledky měření}
+\subsection*{Kundtova trubice}
+Rychlost zvuku ve vzduchu budeme používat hodnotu změřenou metodou uzavřeného rezonátoru při konstantní délce rezonátoru: $c_2 = \SI{00000}{\m\per\s}$~(viz níže).
+
+
+
+
+
+
+
+
+\subsection*{Uzavřený rezonátor}
+Při konstantní délce rezonátoru jsme našli základní frekvenci pro vzduch \SI{213}{\Hz} a pro oxid uhličitý \SI{162}{\Hz}.
+Všechny naměřené rezonanční frekvence jsou uvedeny v tabulce \ref{tab::vzduchf} a zaneseny do grafu \ref{grp::graff}.
+Frekvence, u nichž není uvedeno číslo $k$, nebyly celočíselnými násobky základní frekvence.
+Pravděpodobně se jednalo o tzv. vlčí frekvence, tyto hodnoty jsme vyřadili ze zpracování.
+
+
+\begin{tabulka}[htbp]
+\centering
+\begin{tabular}{cc|cc||cc|cc|cc}
+\multicolumn{4}{c||}{vzduch} & \multicolumn{6}{c}{oxid uhličitý} \\
+$k$ & $f~(\si{\Hz})$ & $k$ & $f~(\si{\Hz})$ & $k$ & $f~(\si{\Hz})$ & $k$ & $f~(\si{\Hz})$ & $k$ & $f~(\si{\Hz})$\\ \hline
+1 & 213 & 8 & 1728 & 1 & 162 & 8 & 1347 & 16 & 2692 \\
+--- & 324 & 9 & 1941 & 2 & 338 & 9 & 1511 & 17 & 2858 \\
+2 & 436 & 10 & 2159 & --- & 486 & 10 & 1681 & 18 & 3028 \\
+3 & 650 & 11 & 2375 & --- & 523 & 11 & 1851 & & \\
+4 & 872 & 12 & 2597 & 4 & 675 & 12 & 2018 & & \\
+5 & 1078 & 13 & 2806 & 5 & 838 & 13 & 2184 & & \\
+6 & 1297 & 14 & 3023 & 6 & 1009 & 14 & 2354 & & \\
+7 & 1515 & & & 7 & 1179 & 15 & 2524 & & \\
+\end{tabular}
+\caption{Naměřené rezonanční frekvence při délce rezonátoru $l=\SI{800}{\mm}$}
+\label{tab::vzduchf}
+\end{tabulka}
+
+
+
+
+
+
+\begin{graph}[htbp] 
+\centering
+\input{graffrekvence.tex}
+\caption{Naměřená závislost rezonanční frekvence $f$ na čísle $k$ (viz rovnice \eqref{eq::f_na_k}) při délce rezonátoru \SI{800}{\mm}}
+\label{grp::graff}
+\end{graph}
+
+\begin{graph}[htbp] 
+\centering
+\input{grafdelka.tex}
+\caption{Délky rezonátoru, při kterých nastala rezonance (vzduch, $f=\SI{3025}{\Hz})$ }
+\label{grp::grafl}
+\end{graph}
