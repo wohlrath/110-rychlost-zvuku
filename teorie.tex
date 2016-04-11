@@ -38,10 +38,35 @@ E=c_1^2 \cdot \rho \,.
 
 
 \subsection*{Uzavřený rezonátor}
-Uzavřený rezonátor je dutá uzavřená kovová trubice s nastavitelnou délkou.
+Uzavřený rezonátor je uzavřená dutá kovová trubice s nastavitelnou délkou.
 Na jednom jejím konci je připevněn reproduktor napojený na elektronický tónový generátor, na druhém konci je mikrofon napojený na mikroampérmetr.
+Rezonance nastává vždy, když je délka rezonátoru celočíselný násobek poloviny vlnové délky zvuku:
+\begin{equation} \label{eq::l_na_k}
+l=k \cdot \frac{\lambda}{2} \,,  \qquad  k=1, 2, 3, \ldots
+\end{equation}
+po úpravě
+\begin{equation} \label{eq::f_na_k}
+f=\frac{c}{2l} \cdot k \,.
+\end{equation}
 
+Pokud rezonance nastane, zaznamenáme na mikroampérmetru jako lokální maximum.
+Rezonátor je opatřen uzavíratelnými přívody, kterými do něj můžeme napustit měřený plyn.
 
+Rychlost zvuku v plynu budeme měřit dvěma způsoby:
+\begin{itemize}
+\item S konstantní délkou oscilátoru budeme měnit frekvenci zdroje. Naměřenou závislost \eqref{eq::f_na_k} nafitujeme přímkou $f(k) = a \cdot k$. Z konstanty $a$ určíme rychlost zvuku jako
+\begin{equation}
+c = 2 \cdot a \cdot k
+\end{equation}
+\item Při konstantní frekvenci zdroje budeme měnit délku rezonátoru. Po úpravě \eqref{eq::f_na_k} máme
+\begin{equation} \label{eq::zavislost_l}
+l= \frac{c}{2f} \cdot k  \,.
+\end{equation}
+Tuto naměřenou závislost nafitujeme přímkou $l(k)= b \cdot k$. Porovnáním s \eqref{eq::zavislost_l} dostaneme
+\begin{equation}
+c = 2 \cdot f \cdot b \,.
+\end{equation}
+\end{itemize}
 
-
-
+Rychlost zvuku ve vzduchu budeme měřit oběma způsoby.
+Rychlost v oxidu uhličitém budeme měřit pouze při konstantní délce rezonátoru.
