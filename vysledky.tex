@@ -1,6 +1,21 @@
 \section*{Výsledky měření}
 \subsection*{Kundtova trubice}
-Rychlost zvuku ve vzduchu budeme používat hodnotu změřenou metodou uzavřeného rezonátoru při konstantní délce rezonátoru: $c_2 = \SI{00000}{\m\per\s}$~(viz níže).
+Rychlost zvuku ve vzduchu budeme používat hodnotu změřenou metodou uzavřeného rezonátoru při konstantní délce rezonátoru: $c_2 = \SI{345.7(3)}{\m\per\s}$~(viz níže).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -11,7 +26,7 @@ Rychlost zvuku ve vzduchu budeme používat hodnotu změřenou metodou uzavřen�
 
 \subsection*{Uzavřený rezonátor}
 Při konstantní délce rezonátoru jsme našli základní frekvenci pro vzduch \SI{213}{\Hz} a pro oxid uhličitý \SI{162}{\Hz}.
-Všechny naměřené rezonanční frekvence jsou uvedeny v tabulce \ref{tab::vzduchf} a zaneseny do grafu \ref{grp::graff}.
+Všechny naměřené rezonanční frekvence jsou uvedeny v tabulce \ref{tab::plynf} a zaneseny do grafu \ref{grp::graff}.
 Frekvence, u nichž není uvedeno číslo $k$, nebyly celočíselnými násobky základní frekvence.
 Pravděpodobně se jednalo o tzv. vlčí frekvence, tyto hodnoty jsme vyřadili ze zpracování.
 
@@ -31,13 +46,8 @@ $k$ & $f~(\si{\Hz})$ & $k$ & $f~(\si{\Hz})$ & $k$ & $f~(\si{\Hz})$ & $k$ & $f~(\
 7 & 1515 & & & 7 & 1179 & 15 & 2524 & & \\
 \end{tabular}
 \caption{Naměřené rezonanční frekvence při délce rezonátoru $l=\SI{800}{\mm}$}
-\label{tab::vzduchf}
+\label{tab::plynf}
 \end{tabulka}
-
-
-
-
-
 
 \begin{graph}[htbp] 
 \centering
@@ -52,3 +62,47 @@ $k$ & $f~(\si{\Hz})$ & $k$ & $f~(\si{\Hz})$ & $k$ & $f~(\si{\Hz})$ & $k$ & $f~(\
 \caption{Délky rezonátoru, při kterých nastala rezonance (vzduch, $f=\SI{3025}{\Hz})$ }
 \label{grp::grafl}
 \end{graph}
+
+Při konstantní frekvenci \SI{3025}{\Hz} jsme v rezonátoru naplněném vzduchem zaznamenali rezonanci při délkách rezonátoru uvedených v tabulce \ref{tab::vzduchl} a vynesených do grafu \ref{grp::grafl}.
+
+\begin{tabulka}[htbp]
+\centering
+\begin{tabular}{cc}
+$k$ & $l~(\si{mm})$ \\ \hline
+13 & \num{742.5} \\
+14 & \num{800.0} \\
+15 & \num{857.5} \\
+\end{tabular}
+\caption{Délky rezonátoru, při kterých nastala rezonance (vzduch, $f=\SI{3025}{\Hz})$ }
+\label{tab::vzduchl}
+\end{tabulka}
+
+Nafitované koeficienty $a$, $b$ a z nich pomocí \eqref{eq::cza} a \eqref{eq::czb} vypočtené rychlosti zvuku jsou uvedeny v tabulce \ref{tab::fit}. Odchylku rychlosti zvuku počítáme podle
+\begin{equation}
+\sigma_c = c \sqrt{ \left( \frac{\sigma_a}{a}   \right)^2
++ \left( \frac{\sigma_l}{l}   \right)^2 } 
+\qquad \text{resp.} \qquad 
+\sigma_c = c \sqrt{ \left( \frac{\sigma_b}{b}   \right)^2
++ \left( \frac{\sigma_f}{f}   \right)^2 }
+\end{equation}
+
+
+\begin{tabulka}[htbp]
+\centering
+\begin{tabular}{ccc}
+\multirow{2}{*}{vzduch} & $a=~\SI{216.03(13)}{\Hz}$ & $\implies c=~\SI{345.7(3)}{\m\per\s}$ \\
+& $b=~\SI{57.14(3)}{\mm}$ & $\implies c=~\SI{345.7(4)}{\m\per\s}$ \\ \hline
+oxid uhličitý & $a=~\SI{168.17(10)}{\Hz}$ & $\implies c=~\SI{269.1(2)}{\m\per\s}$ \\
+\end{tabular}
+\caption{Nafitované koeficienty a vypočtené rychlosti zvuku pro metodu uzavřeného rezonátoru}
+\label{tab::fit}
+\end{tabulka}
+
+Z naměřené rychlosti zvuku v oxidu uhličitém můžeme vypočítat jeho Poissonovu konstantu $\kappa$ podle \eqref{eq::kappa}.
+Molekulová hmotnost oxidu uhličitého je $\mu=\SI{0.044}{\kg\per\mole}$.
+Standardní odchylku počítáme jako
+\begin{equation}
+\sigma_\kappa = \kappa \cdot \sqrt{ \left(2\frac{\sigma_c}{c}\right)^2    +    \left( \frac{\sigma_T}{T} \right)^2} \,.
+\end{equation}
+
+Výsledná změřená Poissonova konstanta oxidu uhličitého je $\kappa =~\num{1.280(3)}$.
