@@ -2,23 +2,27 @@
 \subsection*{Kundtova trubice}
 Rychlost zvuku ve vzduchu budeme používat hodnotu změřenou metodou uzavřeného rezonátoru při konstantní délce rezonátoru: $c_2 = \SI{345.7(3)}{\m\per\s}$~(viz níže).
 
+Obrazec jako na obrázku \ref{obr::obrazectrubice} jsme pozorovali při délce trubice v rozmezí \num{60.0}--\SI{62.6}{\cm}.
+Pozorovaný obrazec odpovídal přesně tomu na obrázku v tom smyslu, že délka trubice byla rovna čtyřem polovinám vlnové délky. 
+Nejviditelnější byl obrazec právě při délce \SI{62.6}{\cm}, ale při délce \SI{62.8}{\cm} se již neobjevil vůbec.
+Předpokládáme, že hodnoty byly rovnoměrně rozděleny v tomto intervalu, střední hodnotu určíme jako jeho střed a standardní odchylku vlnové délky počítáme po vydělení dvěma jako \mbox{$\sigma_{\lambda_2} = (\num{62.6}-\num{60.0})/(2\sqrt{12})~\si{\cm}$}.
 
+Naměřená vlnová délka ve vzduchu tedy byla $\lambda_2 =~\SI{30.7(4)}{\cm}$.
 
+Délka tyče byla $l_T = \SI{150.9(1)}{\cm}$.
+Po dosazení do \eqref{eq::lambda1tyc} a vypočtení standardní odchylky $\sigma_{\lambda_1}=2 \lambda_1 \cdot \sigma_{l_T} / l_T$ dostáváme vlnovou délku v tyči $\lambda_1 =~\SI{301.8(2)}{\cm}$.
 
+Dosazením do \eqref{eq::kundt_rovnost_frekvenci} dostáváme rychlost zvuku v tyči $c_1 =~\SI{3404(42)}{\m\per\s}$.
+Standardní odchylku počítáme podle
+\begin{equation}
+\sigma _{c_1} = c_1 \cdot \sqrt{  \left( \frac{\sigma _{c_2}}{c_2}  \right)^2   +    \left( \frac{\sigma _{\lambda_1}}{\lambda_1}  \right)^2     +    \left( \frac{\sigma _{\lambda_2}}{\lambda_2}  \right)^2  } \,.
+\end{equation}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+Dosazením této hodnoty do \eqref{eq::modulpruznosti} vypočítáme modul pružnosti v tahu mosazi $E=~\SI{99(3)}{\GPa}$. 
+Standardní odchylku počítáme podle
+\begin{equation}
+\sigma _E = E \cdot \sqrt{ \left( 2 \frac{\sigma _{c_1}}{c_1} \right)^2 +   \left( \frac{\sigma_\rho}{\rho}\right)^2} \,.
+\end{equation}
 
 
 

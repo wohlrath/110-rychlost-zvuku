@@ -3,19 +3,24 @@
 Budeme měřit rychlost zvuku v kovové tyči pomocí Kundtovy trubice.
 Kundtova trubice je z jedné strany uzavřená skleněná trubice, z druhé strany do ní vložíme tyč ze zkoumaného materiálu, kterou na konci opatříme korkovým pístem.
 Do trubice rovnoměrně rozprostřeme korkový prášek a tyč podélně rozkmitáme.
-Pokud v trubici vzniklo stojaté vlnění, prášek vytvoří obrazec naznačený v obrázku \ref{obr::obrazectrubice}.
+Pokud v trubici vzniklo stojaté vlnění, prášek vytvoří obrazec naznačený na obrázku \ref{obr::obrazectrubice}.
 Pokud stojaté vlnění nevzniklo, změníme vzdálenost mezi koncem trubice a korkovým pístem a opakujeme, dokud nevznikne.
 Vzdálenost mezi dvěma nejbližšími místy, kde písek nebyl rozmetán, je rovna polovině vlnové délky zvuku.
 
-%\figure \label{obr::obrazectrubice}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth-10cm]{graficos/obr1}
+\caption{Rozmetaný písek v Kundtově trubici}
+\label{obr::obrazectrubice}
+\end{figure}
 
 Kovovou tyč o délce $l_T$ upevníme v jejím prostředku, pak bude vydávat zvuk o vlnové délce $\lambda_1$ rovné dvojnásobku svojí délky, platí tedy
-\begin{equation}
+\begin{equation} \label{eq::lambda1tyc}
 \lambda_1=2 \cdot l_T  \,.
 \end{equation}
 
 Při přechodu z jednoho prostředí do druhého si zvuk zachovává svojí frekvenci
-\begin{equation}
+\begin{equation} \label{eq::kundt_rovnost_frekvenci}
 f_1= \frac{c_1}{\lambda_1}=\frac{c_2}{\lambda_2}=f_2 \,.
 \end{equation}
 kde $f$ je frekvence, $c$ je rychlost zvuku a dolní indexy 1 a 2 označují prostředí (tyč, vzduch resp.).
@@ -26,8 +31,8 @@ Pro tenkou tyč platí \cite{ZFP}
 c_1 = \sqrt{ \frac{E}{\rho}  } \,,
 \end{equation}
 kde $E$ je modul pružnosti v tahu a $\rho$ je hustota tyče.
-Při známé rychlosti zvuku v tyči a její hustoty můžeme vypočítat modul pružnosti 
-\begin{equation}
+Při známé rychlosti zvuku v tyči a její hustoty můžeme vypočítat modul pružnosti v tahu
+\begin{equation} \label{eq::modulpruznosti}
 E=c_1^2 \cdot \rho \,.
 \end{equation}
 
